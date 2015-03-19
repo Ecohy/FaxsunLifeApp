@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/grey"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"        
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="注册账号"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="还没有账号？赶快注册一个，开始购物之旅吧！"
+                android:textColor="@color/black"
+                android:textSize="@dimen/bottom_font_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="电子邮箱"
+                android:textSize="@dimen/font_size" />
+
+            <EditText
+                android:id="@+id/register_email"
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/white"
+                android:text="294510312@qq.com"
+                android:hint=""
+                android:textSize="@dimen/font_size" >
+
+               <requestFocus />
+                </EditText>
+                
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="密码"
+                android:textSize="@dimen/font_size" />
+
+            <EditText
+                android:id="@+id/register_password"
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/white"
+                android:hint=""
+                android:text="123456"
+                android:textSize="@dimen/font_size" >
+                </EditText>
+                
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="确认密码"
+                android:textSize="@dimen/font_size" />
+
+            <EditText
+                android:id="@+id/register_password_confirmation"
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/white"
+                android:hint=""
+                android:text="123456"
+                android:textSize="@dimen/font_size" >              
+                </EditText>
+
+            <Button
+                android:id="@+id/bn_register"
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@color/red"
+                android:text="注册"
+                android:textSize="@dimen/button_font_size"
+                android:textColor="@color/white" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey" >
+
+                <Button
+                    android:id="@+id/bn_forgetpass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:text="忘记密码？"
+                    android:textSize="@dimen/small_font_size"
+                    android:textColor="@drawable/text_selector"
+                    android:background="@drawable/bn_bg_selector" />
+                
+                <Button
+                    android:id="@+id/bn_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_toLeftOf="@id/bn_forgetpass"
+                    android:text="登录   "
+                    android:textSize="@dimen/small_font_size"
+                    android:textColor="@drawable/text_selector"
+                    android:background="@drawable/bn_bg_selector" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>

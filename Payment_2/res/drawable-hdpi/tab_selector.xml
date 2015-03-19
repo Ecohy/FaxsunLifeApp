@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">  
+    <!-- 点击状态下的效果 -->  
+    <item android:state_pressed="true">  
+        <shape>  
+            <!-- 设置背景填充色 -->  
+            <solid android:color="@color/bg_click"/>    
+            <!-- 设置按钮中间文字距上下左右的间距 -->  
+            <padding android:bottom="6dp" android:left="4dp" android:right="4dp" android:top="6dp" />  
+        </shape>  
+    </item>  
+    <!-- 正常状态下(非点击)的效果 -->  
+    <item android:state_pressed="false">  
+        <shape>  
+            <!-- 设置背景填充色为白色 -->  
+            <solid android:color="@color/actionbar_color"/>    
+            <!-- 设置按钮中间文字距上下左右都为10dp的间距 -->  
+            <padding android:bottom="6dp" android:left="4dp" android:right="4dp" android:top="6dp" />  
+        </shape>  
+    </item>  
+  
+</selector>

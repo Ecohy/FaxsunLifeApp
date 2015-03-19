@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:orientation="vertical"
+     android:background="@color/grey" >     
+    
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="96dp"
+    android:padding="2dp"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+     
+     <ImageView
+         android:layout_width="100dp"
+         android:layout_height="fill_parent"
+         android:id="@+id/product_image"
+         android:scaleType="fitXY"/>
+     
+     <LinearLayout 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="10dp"
+		android:gravity="left"
+		android:orientation="vertical"
+		android:background="@color/white" >
+
+         <TextView
+             android:id="@+id/product_name"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:textSize="18sp"/>
+         
+         <TextView
+             android:id="@+id/product_prize"
+             android:layout_width="165dp"
+             android:layout_height="match_parent"
+             android:gravity="left"
+             android:textSize="24sp" />
+
+         <ProgressBar
+             android:id="@+id/progressBar"
+             style="?android:attr/progressBarStyleHorizontal"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" />
+                                    			
+         </LinearLayout>
+ </LinearLayout>
+ </ScrollView>
+        

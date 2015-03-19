@@ -1,0 +1,56 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>    
+    
+    <!-- no title全屏显示 -->
+    <style name="Theme.CustomizedFullScreen" parent="android:Theme">
+    	<item name="android:windowFullscreen">true</item>
+    	<item name="android:windowNoTitle">true</item>
+	</style>
+	
+    <!-- ActionBar STYLE -->
+    <style name="ActivityTheme_Light" parent="android:Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/actionbar_def_style</item> 
+    </style>
+
+    <!-- 自定义ActionBar样式，重设ActionBar背景，隐藏actionbar左侧的应用图标和标题 ,自定义action bar的高度-->
+    <style name="actionbar_def_style" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/actionbar_color</item>
+        <item name="android:displayOptions">showHome</item>
+        <item name="android:height">@dimen/actionbar_height</item>
+        <item name="android:selectableItemBackground">@color/bg_click</item>
+    </style>
+    
+     <style name="main_tab_bottom">  
+        <item name="android:textSize">@dimen/bottom_tab_font_size</item>  
+        <item name="android:textColor">@color/white</item>  
+        <item name="android:ellipsize">marquee</item>   <!--自动换行 -->
+        <item name="android:gravity">left</item>  
+      	<item name="android:background">@drawable/tab_selector</item>   
+        <item name="android:paddingTop">@dimen/bottom_tab_padding_up</item>  
+<!--        <item name="android:paddingBottom">1.0dip</item>  -->
+        <item name="android:layout_width">wrap_content</item>  
+        <item name="android:layout_height">@dimen/bottom_tab_height</item>  
+<!--         <item name="android:layout_marginBottom">1.0dip</item>   -->
+        <item name="android:button">@null</item>  <!-- radioButton 特有属性，去掉前面的圆点 -->
+        <item name="android:singleLine">true</item>  
+        <item name="android:drawablePadding">@dimen/bottom_tab_padding_drawable</item>  <!-- 设置drawable与textview间隔 -->
+        <item name="android:layout_weight">1.0</item>  
+    </style>         
+
+</resources>

@@ -1,0 +1,46 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.payment_2.MainActivity" >
+    
+    <item
+    	android:id="@+id/menu_search"
+    	android:icon="@drawable/icon_search_white"
+    	android:showAsAction="always"
+    	android:title="搜索"/>
+	<item
+    	android:id="@+id/menu_cart"
+    	android:showAsAction="always"
+    	android:title="购物车"
+    	android:icon="@drawable/icon_cart_white"/>
+    	
+	<item
+    	android:id="@+id/menu_user"
+    	android:actionProviderClass="com.example.test.MyActionProvider"
+    	android:showAsAction="always"
+    	android:icon="@drawable/icon_user_white"
+    	android:title="用户">
+    	<menu>
+        <item
+            android:id="@+id/menu_login"
+            android:actionProviderClass="com.example.test.MyActionProvider"
+            android:showAsAction="always|withText"
+            android:title="登录"/>
+        <item
+            android:id="@+id/menu_register"
+            android:actionProviderClass="com.example.test.MyActionProvider"
+            android:showAsAction="always|withText"
+            android:title="注册"/>
+        <item
+            android:id="@+id/menu_myorder"
+            android:actionProviderClass="com.example.test.MyActionProvider"
+            android:showAsAction="always|withText"
+            android:title="我的订单"/>
+        <item
+            android:id="@+id/menu_mycollection"
+            android:actionProviderClass="com.example.test.MyActionProvider"
+            android:showAsAction="always|withText"
+            android:title="收藏夹"/>
+    </menu>
+</item>
+
+</menu>

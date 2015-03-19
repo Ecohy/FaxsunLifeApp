@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabHost 
+    android:id="@android:id/tabhost" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"  
+  	xmlns:android="http://schemas.android.com/apk/res/android">  
+    <LinearLayout 
+        android:orientation="vertical" 
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent">  
+        <FrameLayout 
+            android:id="@android:id/tabcontent" 
+            android:layout_width="fill_parent" 
+            android:layout_height="0.0dip" 
+            android:layout_weight="1.0" />  
+        	<TabWidget 
+        	    android:id="@android:id/tabs" 
+        	    android:visibility="gone" 
+        	    android:layout_width="fill_parent" 
+        	    android:layout_height="wrap_content" 
+        	    android:layout_weight="0.0" />  
+            	<RadioGroup   
+                android:gravity="center_vertical" 
+                android:layout_gravity="bottom" 
+                android:orientation="horizontal" 
+                android:id="@+id/main_radio" 
+                android:layout_width="fill_parent" 
+                android:layout_height="55dp"
+               	android:background="@color/actionbar_color"  >
+                  
+                <RadioButton  android:id="@+id/radio_button0" android:gravity="center_vertical|center_horizontal" android:text="首页" android:drawableTop="@drawable/icon_user_white" style="@style/main_tab_bottom" />  
+                <RadioButton  android:id="@+id/radio_button1" android:gravity="center_vertical|center_horizontal" android:text="母婴" android:drawableTop="@drawable/icon_user_white" style="@style/main_tab_bottom" />  
+                <RadioButton  android:id="@+id/radio_button2" android:gravity="center_vertical|center_horizontal" android:text="新奇" android:drawableTop="@drawable/icon_user_white" style="@style/main_tab_bottom" />  
+                <RadioButton  android:id="@+id/radio_button3" android:gravity="center_vertical|center_horizontal" android:text="健康" android:drawableTop="@drawable/icon_user_white" style="@style/main_tab_bottom" />  
+                <RadioButton  android:id="@+id/radio_button4" android:gravity="center_vertical|center_horizontal" android:text="夺宝" android:drawableTop="@drawable/icon_user_white" style="@style/main_tab_bottom" />  
+
+            </RadioGroup>  
+    </LinearLayout>  
+</TabHost>

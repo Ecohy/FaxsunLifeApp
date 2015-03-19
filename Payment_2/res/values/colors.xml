@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    
+    <color name="actionbar_color">#ffe40037</color>
+    <color name="white">#ffffffff</color>
+    <color name="bg_click">#FFA4C639</color>
+    <color name="grey">#fff0f0f0</color>
+    <color name="red">#ffe40037</color>
+    <color name="black">#ffa0a0a0</color>
+    <color name="dark">#ffd0d0d0</color>
+    <color name="blue">#ff00ffff</color>
+    
+    </resources>
+

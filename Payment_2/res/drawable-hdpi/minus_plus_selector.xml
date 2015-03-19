@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">  
+    <!-- 点击状态下的效果 -->  
+    <item android:state_pressed="true"    
+          android:color="@color/black" >
+          <shape>   
+          <stroke  
+                android:width="1dp"  
+                android:color="@color/grey"/>  
+                </shape>    
+    </item>  
+    <!-- 正常状态下(非点击)的效果 -->  
+    <item android:state_pressed="false" 
+          android:color="@color/black" >
+          <shape>   
+          <stroke  
+                android:width="1dp"  
+                android:color="@color/grey"/>  
+                </shape>
+    </item>  
+  
+</selector>
